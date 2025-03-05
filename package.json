@@ -16,6 +16,11 @@
         "url": "https://learnthisacademy.com"
     },
     "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "mongoose": "^8.12.1"
+    },
     "devDependencies": {
         "eslint": "8.40.0",
         "eslint-config-prettier": "8.8.0",
@@ -29,7 +34,11 @@
         "prettier": "2.8.8"
     },
     "imports": {
-        "#Lib/*": "./src/lib/*"
+        "#Config/*": "./src/config/*",
+        "#Controllers/*": "./src/controllers/*",
+        "#Dto/*": "./src/dto/*",
+        "#Routes/*": "./src/routes/*",
+        "#Schemas/*": "./src/schemas/*"
     },
     "lint-staged": {
         "*.js": "eslint --fix",
