@@ -1,5 +1,5 @@
 {
-    "name": "node-template",
+    "name": "gestionusers-ducurso",
     "version": "1.0.0",
     "type": "module",
     "description": "Plantilla base para los proyectos desarrollados en el curso de Node.JS de la plataforma LearnThis Academy",
@@ -12,7 +12,7 @@
         "postinstall": "npm run prepare"
     },
     "author": {
-        "name": "LearnThis Academy",
+        "name": "foxy1482",
         "url": "https://learnthisacademy.com"
     },
     "license": "MIT",
