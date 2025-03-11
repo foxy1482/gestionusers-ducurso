@@ -3,7 +3,7 @@ import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import addErrors from 'ajv-errors';
 import { error } from 'ajv/dist/vocabularies/applicator/dependencies.js';
-import { emailDTOSchema, idDTOSchema, nameDTOSchema, passwordDTOSchema, surnameDTOSchema } from '#Lib/dto-types.js';
+import { emailDTOSchema, idDTOSchema, nameDTOSchema, passwordDTOSchema, surnameDTOSchema } from '#Dto/dto-types.js';
 
 const RegisterDTOSchema = Type.Object({
     _id: idDTOSchema,

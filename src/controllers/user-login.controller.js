@@ -5,9 +5,9 @@ import { SignJWT } from "jose";
 const userLoginController = async (req,res)=>{
     const {email,password} = req.body;
     const existingUserByEmail = await UserModel.findOne({email}).exec();
-    if (!existingUserByEmail) return res.status(401).send("Credenciales incorrectas.");
+    if (!existingUserByEmail) return res.status(401).send({errors: ["Credenciales incorrectas."]});
     const checkPassword = await compare(password, existingUserByEmail.password);    
-    if (!checkPassword) return res.status(401).send("Credenciales incorrectas.");
+    if (!checkPassword) return res.status(401).send({errors: ["Credenciales incorrectas."]});
     const jwtConstructor = new SignJWT({
         id: existingUserByEmail._id,
     })
